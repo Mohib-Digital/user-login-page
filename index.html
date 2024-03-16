@@ -10,34 +10,47 @@
             text-align: center;
             width: 40%;
             border: 1px solid black;
-            background-color: #97a4bd;
+            background-color: rgba(1, 1, 1, 0.6);
             border-radius: 5px;
+            padding: 50px 0;
+        }
+        #user-page h2{
+            color: white;
         }
         #username{
             padding: 15px;
             border-radius: 50px;
             margin: 15px;
-            background-color: #ccc;
+            background-color: white;
             border: none;
+            width: 50%;
         }
         #password {
             padding: 15px;
             border-radius: 50px;
             margin: 15px;
-            background-color: #ccc;
+            background-color: white;
             border: none;
+            width: 50%;
         }
         #login-btn {
             padding: 15px;
             border-radius: 50px;
             width: 35%;
             margin: 40px;
+            margin-right: 15px;
             border: none;
             background-color: white;
             color: black;
             font-size: 20px;
             font-weight: bold;
             font-family: Tahoma;
+        }
+        #user-icon {
+            color: white;
+        }
+        #password-icon {
+            color: white;
         }
     </style>
 </head>
@@ -46,9 +59,9 @@
 
         <div id="user-page">
             <h2>USER LOGIN</h3>
-            <i class="fa fa-user" style="font-size:36px"></i>
+            <i class="fa fa-user-circle" id="user-icon" style="font-size:24px"></i>
             <input type="text" id="username" placeholder="Useranme"> <br>
-            <i class="fa fa-lock" style="font-size:36px"></i>
+            <i class="fa fa-unlock-alt" id="password-icon" style="font-size:24px"></i>
             <input type="password" id="password" placeholder="Password"> <br>
             <button id="login-btn">LOGIN</button>
         </div>
